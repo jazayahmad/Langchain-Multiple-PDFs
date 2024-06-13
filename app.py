@@ -13,7 +13,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Qdrant
 from qdrant_client import QdrantClient
 qdrant_client = QdrantClient("localhost", port=6333)
-embeddings = OpenAIEmbeddings(openai_api_key="sk-proj-EcW07sip8TcxokpF3qEHT3BlbkFJf8F5qgrzd3OMJisi6SRV")
+embeddings = OpenAIEmbeddings(openai_api_key=os.environ.get("OPENAI_API_KEY"))
 vector_store = Qdrant(
 client = qdrant_client, collection_name= "pulin_collection",
 embeddings=embeddings)
