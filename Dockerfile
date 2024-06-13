@@ -15,4 +15,4 @@ COPY . /app
 # EXPOSE 8501
 
 # Command to run your Python script or Streamlit app
-CMD ["streamlit", "run", "your_script.py"]
+CMD ["streamlit", "run", "app.py"]

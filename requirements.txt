@@ -2,9 +2,9 @@ streamlit
 PyPDF2
 langchain
 python-dotenv
-faiss-cpu
+qdrant-client
 openai
-huggingface_hub
-InstructorEmbedding
-sentence_transformers
 tiktoken
+langchain-qdrant 
+langchain-openai 
+langchain-community
